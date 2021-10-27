@@ -1,0 +1,95 @@
+/*=====Import Goolge Font======*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/*=====General Setting======*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-bg: #fafafa;
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-black: hsl(0, 0%, 0%);
+}
+body {
+	background-color: var(--clr-bg);
+	font-family: 'Lato', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: hsl(0, 4%, 43%);
+}
+nav {
+	display: grid;
+	grid-template-columns: 300px auto 300px;
+	padding: 10px;
+}
+.logo {
+	border-bottom: 2 solid var(--clr-black);
+	margin: 0 auto;
+	width: 700px;
+}
+.logo h1 {
+	font-size: 2.25rem;
+	letter-spacing: 5px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+.logo span {
+	color: coral;
+	font-style: italic;
+}
+.social-icons i {
+	width: 20px;
+	margin: 5px;
+	opacity: 50%;
+}
+.social-icons i {
+	opacity: 100%;
+	transition: opacity 0.3s ease-in-out;
+}
+.sub-btn a {
+	display: block;
+	padding: 6px;
+	width: 140px;
+	text-align: center;
+	border: 3px solid sandybrown;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	margin: 0 auto;
+}
+.sub-btn a:hover {
+	background-color: coral;
+	border: 2px solid #333;
+	transition: all 0.3s ease-in-out;
+}
+
+/*===========NAV======*/
+.nav-bar a {
+	position: relative;
+	text-align: center;
+	grid-column: 1 / 4;
+	width: 600px;
+	margin: 0 auto;
+}
+.nav-bar a {
+	display: block;
+	float: left;
+	padding: 15px;
+	width: 150px;
+	font-weight: 900;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+.nav-bar a.ctive {
+	color: crimson;
+}
+.line {
+	position: absolute;
+	width: 150px;
+	border-bottom: 2px solid hsl(125, 72%, 38%);
+	transition: transform 0.3s ease-in-out;
+}
